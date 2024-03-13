@@ -12,5 +12,4 @@ db.run(sql);
 // let test = "INSERT INTO todo (task) VALUES ('Kjøpe melk')";
 // db.run(test);
 
-
 module.exports = db;

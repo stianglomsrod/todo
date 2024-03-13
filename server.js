@@ -8,15 +8,10 @@ app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
   let sql = "SELECT * FROM todo";
-  let list = [];
   db.all(sql, [], (err, rows) => {
     if (err) {
       throw err;
     }
-    rows.forEach((row) => {
-      list.push(row);
-    });
-    console.log(list[0].task);
     res.render("index", { tasks: rows });
   });
 });
