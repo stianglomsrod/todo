@@ -1,0 +1,1 @@
+INSERT INTO todo (task) VALUES ("Handle"), ("Tannlegetime"), ("Finne ut hvilke rader som skal være med i databasen"), ("Implementere prioritering"), ("Implementere kalender");
